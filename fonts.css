@@ -35,7 +35,5 @@
 /* HelveticaNeue */
 @font-face {
   font-family: "HelveticaNeue";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/static/font/helvetica-arabic/HelveticaNeueW23forSKY-Reg.eot?#iefix") format("embedded-opentype"), url("/static/font/helvetica-arabic/HelveticaNeueW23forSKY-Reg.woff") format("woff"), url("/static/font/helvetica-arabic/HelveticaNeueW23forSKY-Reg.ttf") format("truetype"), url("/static/font/helvetica-arabic/HelveticaNeueW23forSKY-Reg.svg#HelveticaNeueLTArabic55Roman") format("svg");
+  src: url("https://cdn.rawgit.com/bilalbentoumi/MyFiles/b17a357a/HelveticaNeueW23forSKY-Reg.ttf");
 }
