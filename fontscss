@@ -1,0 +1,25 @@
+@font-face{
+    font-family: 'sky-bold';
+    src: url('http//www.fontstatic.com/fonts/sky-bold/sky-bold.eot?#iefix');
+    src: local('السماء ثقيل'),local('sky-bold'),url('//www.fontstatic.com/fonts/sky-bold/sky-bold.woff') format('woff');
+ }
+
+@font-face{
+    font-family: 'Frutiger LT Arabic 45 Light';
+    src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-45Light.ttf');
+}
+
+@font-face{
+    font-family: 'Frutiger LT Arabic 55 Roman';
+    src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-55Roman.ttf');
+}
+
+@font-face{
+    font-family: 'Frutiger LT Arabic 65 Bold';
+    src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-65Bold.ttf');
+}
+
+@font-face{
+    font-family: 'Frutiger LT Arabic 75 Black';
+    src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-75Black.ttf');
+}
