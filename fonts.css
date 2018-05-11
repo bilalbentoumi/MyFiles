@@ -1,4 +1,4 @@
-/* Fonts */
+/* Sky */
 @font-face{
     font-family: 'sky';
     src: url('http//www.fontstatic.com/fonts/sky/sky.eot?#iefix');
@@ -11,6 +11,7 @@
     src: local('السماء ثقيل'),local('sky-bold'),url('//www.fontstatic.com/fonts/sky-bold/sky-bold.woff') format('woff');
 }
 
+/* Frutiger */
 @font-face{
     font-family: 'Frutiger LT Arabic 45 Light';
     src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-45Light.ttf');
@@ -29,4 +30,12 @@
 @font-face{
     font-family: 'Frutiger LT Arabic 75 Black';
     src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-75Black.ttf');
+}
+
+/* HelveticaNeue */
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/static/font/helvetica-arabic/HelveticaNeueW23forSKY-Reg.eot?#iefix") format("embedded-opentype"), url("/static/font/helvetica-arabic/HelveticaNeueW23forSKY-Reg.woff") format("woff"), url("/static/font/helvetica-arabic/HelveticaNeueW23forSKY-Reg.ttf") format("truetype"), url("/static/font/helvetica-arabic/HelveticaNeueW23forSKY-Reg.svg#HelveticaNeueLTArabic55Roman") format("svg");
 }
