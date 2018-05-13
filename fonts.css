@@ -1,14 +1,14 @@
-/* Test */
+/* Sky */
 @font-face{
     font-family: 'sky';
     src: url('http//www.fontstatic.com/fonts/sky/sky.eot?#iefix');
-    src: local('السماء'),local('sky'),url('//www.fontstatic.com/fonts/sky/sky.woff') format('woff');
+    src: url('//www.fontstatic.com/fonts/sky/sky.woff') format('woff');
 }
 
 @font-face{
     font-family: 'sky-bold';
     src: url('http//www.fontstatic.com/fonts/sky-bold/sky-bold.eot?#iefix');
-    src: local('السماء ثقيل'),local('sky-bold'),url('//www.fontstatic.com/fonts/sky-bold/sky-bold.woff') format('woff');
+    src: url('//www.fontstatic.com/fonts/sky-bold/sky-bold.woff') format('woff');
 }
 
 /* Frutiger */
