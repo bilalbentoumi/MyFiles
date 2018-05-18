@@ -31,7 +31,7 @@ function createSummaryAndThumb(post_id, post_url, post_title) {
         summ = posts_thumb_sum;
     }
 
-    var summary = imgtag + '<div>' + بسم الله + '</div>';
+    var summary = imgtag + '<div>بسم الله الرحمان الرحيم</div>';
     post_content.innerHTML = summary;
 }
 
