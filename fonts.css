@@ -13,22 +13,26 @@
 
 /* Frutiger */
 @font-face{
-    font-family: 'Frutiger LT Arabic 45 Light';
+    font-family: 'Frutiger LT Arabic';
+    font-weight: 400;
     src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-45Light.ttf');
 }
 
 @font-face{
-    font-family: 'Frutiger LT Arabic 55 Roman';
+    font-family: 'Frutiger LT Arabic';
+    font-weight: 500;
     src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-55Roman.ttf');
 }
 
 @font-face{
-    font-family: 'Frutiger LT Arabic 65 Bold';
+    font-family: 'Frutiger LT Arabic';
+    font-weight: 600;
     src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-65Bold.ttf');
 }
 
 @font-face{
-    font-family: 'Frutiger LT Arabic 75 Black';
+    font-family: 'Frutiger LT Arabic';
+    font-weight: 700;
     src: url('https://cdn.rawgit.com/bilalbentoumi/MyFiles/f00dc787/FrutigerLTArabic-75Black.ttf');
 }
 
