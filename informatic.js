@@ -1,12 +1,12 @@
 /* Toggle Navbar */
 function toggleNav() {
     if ($('.toggle').hasClass('show')) {
-        toggle('.wrapper', 'hide');
+        toggle('.outer-wrapper', 'hide');
         $(window).scrollTop(parseInt($('#scroll_position').val()));
     } else {
         $('#scroll_position').val($(window).scrollTop());
         setTimeout(function(){
-            toggle('.wrapper', 'hide');
+            toggle('.outer-wrapper', 'hide');
         }, 400);
     }
     toggle('.toggle', 'show');
