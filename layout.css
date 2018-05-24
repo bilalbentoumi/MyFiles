@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {text-align: center; justify-content: center;}
+
+.font-small {font-size: 20px;}
+.font-medium{font-size: 30px;}
+.font-big {font-size: 36px;}
+.font-xbig {font-size: 42px;}
+
+.font-light {font-weight: 400;}
+.font-normal {font-weight: 500;}
+.font-bold {font-weight: 600;}
+.font-black {font-weight: 700;}
+
+.text-white {color: #FFF;}
+.text-black {color: #000;}
+
+.p-0 {padding: 0;}
+.m-0 {margin: 0;}
+
+.row {display: flex; flex-wrap: wrap;}
+
+.p-10 {padding: 10px;}
+.p-20 {padding: 20px;}
+.p-30 {padding: 30px;}
+
+.p-10-h {padding: 0 10px;}
+.p-10-v {padding: 10px 0;}
+
+.p-10-t {padding-top: 10px;}
+.p-10-b {padding-bottom: 10px;}
+
+.p-20-t {padding-top: 20px;}
+.p-20-b {padding-bottom: 20px;}
+
+@media (max-width: 575.98px) {
+    .container {width: 100%; margin: auto;}
+    .col-25, .col-33, .col-50 {width: 100%;}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {width: 530px; margin: auto;}
+    .col-25, .col-33, .col-50 {width: 100%;}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {width: 720px; margin: auto;}
+    .col-25, .col-33, .col-50 {width: 50%;}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {width: 950px; margin: auto;}
+    .col-25 {width: 25%;}
+    .col-33 {width: 33.33%;}
+    .col-50 {width: 50%;}
+}
+
+@media (min-width: 1200px) {
+    .container {width: 1150px; margin: auto;}
+    .col-25 {width: 25%;}
+    .col-33 {width: 33.33%;}
+    .col-50 {width: 50%;}
+}
