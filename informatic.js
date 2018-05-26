@@ -1,16 +1,8 @@
-var scroll_position = 0;
+//var scroll_position = 0;
 
 /* Toggle Navbar */
 function toggleNav() {
-    if ($('.toggle').hasClass('show')) {
-        toggle('.outer-wrapper', 'hide');
-        $(window).scrollTop(scroll_position);
-    } else {
-        scroll_position = $(window).scrollTop();
-        setTimeout(function(){
-            toggle('.outer-wrapper', 'hide');
-        }, 400);
-    }
+    toggle('body', 'hide');
     toggle('.toggle', 'show');
 }
 
