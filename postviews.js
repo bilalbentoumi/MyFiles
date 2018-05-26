@@ -1,6 +1,6 @@
 $.each($('a[name]'), function(i, e) {
     var elem = $(e).parent().find('#postviews');
-    var blogStats = new Firebase('https://YOUR-APP-NAME.firebaseio.com/pages/id/' + $(e).attr('name'));
+    var blogStats = new Firebase('https://informatics-21064.firebaseio.com/pages/id/' + $(e).attr('name'));
     blogStats.once('value', function(snapshot) { 
         var data = snapshot.val();
         var isnew = false;
