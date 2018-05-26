@@ -1,6 +1,5 @@
 /* Toggle Navbar */
 function toggleNav() {
-    $('body').toggleClass('hide');
     $('.toggle').toggleClass('show');
 }
 
