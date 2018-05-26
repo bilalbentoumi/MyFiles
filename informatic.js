@@ -25,7 +25,7 @@ $(window).scroll(function(){
 /* Fix Comment Author Picture */
 $('.avatar-image-container img').each(function(){
     var e = $(this);
-    e.attr('src', e.attr('src').replace('/s35', '/s60';));
+    e.attr('src', e.attr('src').replace('/s35', '/s60'));
 });   
 
 /* Time Ago */
