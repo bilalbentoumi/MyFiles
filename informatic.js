@@ -23,10 +23,12 @@ $(window).scroll(function(){
 });
 
 /* Fix Comment Author Picture */
-$('.avatar-image-container img').each(function(){
-    var e = $(this);
-    e.attr('src', e.attr('src').replace('/s35', '/s60'));
-});   
+$(function(){
+	$('.avatar-image-container img').each(function(){
+		var e = $(this);
+		e.attr('src', e.attr('src').replace('/s35', '/s60'));
+	});
+});
 
 /* Time Ago */
 function timeAgo(date) {
@@ -115,10 +117,11 @@ function setTimeAgo(e) {
     }, 60000);
 }
 
-
-$('.timeago').each(function(){
-    var e = $(this);
-	setTimeAgo(e);
+$(function(){
+	$('.timeago').each(function(){
+	    var e = $(this);
+		setTimeAgo(e);
+	});
 });
 
 /* Sticky Widget */
