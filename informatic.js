@@ -158,3 +158,50 @@ $(function(){
         });
     }
 });
+
+/* Get RSS Posts */
+function getPosts() {
+	var posts;
+	var dara_url = "https://www.googleapis.com/blogger/v3/blogs/6634912471318911972/posts?key=AIzaSyAkhAVRoHk3jGgsJ4_yqQQXOmPRIVeioAs&fetchImages=true";
+
+	$.ajax({
+		url: dara_url,
+		dataType: 'json',
+		async: false,
+		success: function(data) {
+			posts = data['items'];
+		}
+	});
+
+	return posts;
+}		
+
+/* Initialize Slideshow */
+function initSlideshow() {
+	var posts = getPosts();
+	for (var i = 0; i < posts.length; i++) {
+		var post = posts[i];
+		var postTitle = posts[i].title;
+		var postLink = posts[i].url;
+		var postAuthor = posts[i].author.displayName;
+		var postAuthorPic = posts[i].author.image.url;
+		var postImage = post.images[0].url;
+		/* Slideshow */
+		$("#slideshow").append("<div class='slide'><img class='slide-image' src='" + postImage + "'><div class='slide-overlay'></div><a href='" + postLink + "' class='slide-link'><h2 class='slide-title'>" + postTitle + "</h2></a></div>");
+	}
+
+	$('#slideshow').owlCarousel({
+		rtl:true,
+		nav:true,
+		navText: ['<i class="fa fa-chevron-right"></i>', '<i class="fa fa-chevron-left"></i>'],
+		dots:false,
+		loop:true,
+		items:1
+	});
+}
+
+/* Initialize Post Header */
+function initPostHeader(title, img_url) {
+	$('.post-title').html(title);
+	$('.post-image').attr('src', img_url);
+}
