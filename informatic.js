@@ -109,40 +109,6 @@ function setTimeAgo(e) {
     }, 60000);
 }
 
-/* Sticky Widget */
-$(function(){
-    if ($('#HTML1').length) {
-      var el = $('#HTML1');
-      var stickyTop = $('#HTML1').offset().top;
-      var stickyHeight = $('#HTML1').height();
-      var stickyWidth = $('#HTML1').width();
-      var marginTop = 80;
-
-      var sidebarElementsHeight = 0;
-      $('.sidebar').children().each(function(){
-          sidebarElementsHeight = sidebarElementsHeight + $(this).height();
-      });
-
-      $(window).scroll(function(){
-          var limit = $('.footer').offset().top - stickyHeight - 20 - marginTop;
-
-          var windowTop = $(window).scrollTop();
-
-          if ((stickyTop - marginTop) < windowTop && $('.sidebar').height() > (sidebarElementsHeight + 100)){
-             el.css({ position: 'fixed', top: 0 + marginTop, width: stickyWidth });
-          }
-          else {
-             el.css('position','static');
-          }
-
-          if (limit < windowTop) {
-          var diff = limit - windowTop + marginTop;
-          el.css({top: diff});
-          }
-        });
-    }
-});
-
 /* Get RSS Posts */
 function getPosts() {
 	var posts;
