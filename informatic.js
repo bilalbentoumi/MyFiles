@@ -111,35 +111,34 @@ function setTimeAgo(e) {
 
 /* Sticky Widget */
 $(function(){
-    if ($('#HTML1').length) { // Check if widget exsits
-        var sticky = $('#HTML1');
-        var container = $('.main-wrapper');
-        var sidebar = $('.sidebar');
+    if ($('#HTML1').length) {
+      var el = $('#HTML1');
+      var stickyTop = $('#HTML1').offset().top;
+      var stickyHeight = $('#HTML1').height();
+      var stickyWidth = $('#HTML1').width();
+      var marginTop = 80;
 
-        var stickyTop = sticky.offset().top;
-        var stickyHeight = sticky.height();
-        var stickyWidth = sticky.width();
-        var sidebarHeight = sidebar.height();
-        var sidebarElementsHeight = 0;
-        sidebar.children().each(function(){
-            sidebarElementsHeight = sidebarElementsHeight + $(this).height();
-        });
-        var containerBottom = container.offset().top + container.height();
+      var sidebarElementsHeight = 0;
+      $('.sidebar').children().each(function(){
+          sidebarElementsHeight = sidebarElementsHeight + $(this).height();
+      });
 
-        $(window).scroll(function(){
-            var limit = containerBottom - stickyHeight - 60;
-            var windowTop = $(window).scrollTop();
+      $(window).scroll(function(){
+          var limit = $('.footer').offset().top - stickyHeight - 20 - marginTop;
 
-            if ((stickyTop - 80) < windowTop && sidebarHeight > (sidebarElementsHeight + 60)){
-                sticky.css({ position: 'fixed', top: 80, width: stickyWidth });
-            } else {
-                sticky.css('position','static');
-            }
+          var windowTop = $(window).scrollTop();
 
-            if (limit < windowTop) {
-                var diff = limit - windowTop + 80;
-                sticky.css({top: diff});
-            }
+          if ((stickyTop - marginTop) < windowTop && $('.sidebar').height() > (sidebarElementsHeight + 100)){
+             el.css({ position: 'fixed', top: 0 + marginTop, width: stickyWidth });
+          }
+          else {
+             el.css('position','static');
+          }
+
+          if (limit < windowTop) {
+          var diff = limit - windowTop + marginTop;
+          el.css({top: diff});
+          }
         });
     }
 });
