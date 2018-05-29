@@ -36,7 +36,37 @@
 }
 
 .codeblock {
-	position: relative;
+    position: relative;
+}
+
+.copy {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    border: solid 1px;
+    color: #9E9E9E;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+.copied {
+    position: absolute;
+    color: #000;
+    top: 10px;
+    right: 70px;
+    visibility: hidden;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+.copied.visible {
+    visibility: visible;
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 3px;
 }
 
 pre {
@@ -49,20 +79,6 @@ pre {
 	border-radius: 0px;
 	font-size: 14px;
 	font-family: consolas, menlo, courier, monospace;
-}
-
-.copy {
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	background: transparent;
-	border: solid 1px;
-	color: #9E9E9E;
-	cursor: pointer;
-	font-size: 14px;
-	padding: 6px;
-	border-radius: 3px;
-	z-index: 10;
 }
 
 pre .str, code .str { color: #e6db5a; } /* string */
