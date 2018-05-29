@@ -1,0 +1,35 @@
+.tabbed {
+    margin: 15px 0;
+}
+
+.tabbed .nav {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tabbed .nav button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tabbed .nav button.active {
+    background: #ccc;
+}
+
+.tabbed .tabs .tab {
+    background: #FFF;
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabbed .tabs .tab.active {
+    display: block;
+}
