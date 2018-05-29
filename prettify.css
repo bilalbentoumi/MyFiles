@@ -1,43 +1,43 @@
 .tabbed {
-    margin: 15px 0;
+	margin: 15px 0;
 }
 
 .tabbed .nav {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
 }
 
 .tabbed .nav button {
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
 	background: transparent;
 }
 
 .tabbed .nav button.active {
-    background: #ccc;
+	background: #ccc;
 }
 
 .tabbed .tabs .tab {
-    background: #FFF;
-    display: none;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-top: none;
+	background: #FFF;
+	display: none;
+	padding: 0px;
+	border: 1px solid #ccc;
+	border-top: none;
 }
 
 .tabbed .tabs .tab.active {
-    display: block;
+	display: block;
 }
 
 
 pre {
-    margin: 0;
+	margin: 0;
 }
 
 pre .str, code .str { color: #e6db5a; } /* string */
@@ -74,20 +74,20 @@ ol.linenums {
 	margin-bottom: 0;
 	color: #75715e;
 	list-style: decimal inside !important;
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
 ol.linenums span {
 	font-family: Menlo,Bitstream Vera Sans Mono,DejaVu Sans Mono,Monaco,Consolas,monospace;
-    font-size: 13.8px;
+	font-size: 13.8px;
 }
 
 li.L1, li.L3, li.L5, li.L7, li.L9 {
-    background: transparent;
+	background: transparent;
 }
 
 li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
-    list-style-type: decimal !important;
+	list-style-type: decimal !important;
 }
 
 @media print {
