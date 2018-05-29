@@ -37,6 +37,7 @@
 
 
 pre {
+	position: relative;
 	margin: 0;
 	width: 100%;
 	padding: 1em;
@@ -46,6 +47,19 @@ pre {
 	border-radius: 0px;
 	font-size: 14px;
 	font-family: consolas, menlo, courier, monospace;
+}
+
+.copy {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: transparent;
+	border: solid 1px;
+	color: #9E9E9E;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 6px;
+	border-radius: 3px;
 }
 
 pre .str, code .str { color: #e6db5a; } /* string */
