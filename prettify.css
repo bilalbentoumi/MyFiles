@@ -74,6 +74,7 @@
 	height: 10px;
 	background: #52534e;
 	transform: rotate(45deg);
+	transition: 0.2s;
 }
 
 .copied.visible {
