@@ -60,8 +60,11 @@
     top: 10px;
     right: 48px;
     visibility: hidden;
+    opacity: 0;
     padding: 0px 10px;
     transition: 0.2s;
+    background: #52534e;
+    border-radius: 3px;
 }
 
 .copied:before {
@@ -74,13 +77,11 @@
 	height: 10px;
 	background: #52534e;
 	transform: rotate(45deg);
-	transition: 0.2s;
 }
 
 .copied.visible {
     visibility: visible;
-    background: rgb(255, 255, 255, 0.2);
-    border-radius: 3px;
+    opacity: 1;
 }
 
 pre {
