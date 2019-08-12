@@ -396,7 +396,7 @@ body {
 }
 
 /* Article */
-.article {
+.post-wrapper {
     background: #FFF;
     border-radius: 3px;
     box-shadow: 0px 4px 20px rgba(101, 101, 101, 0.1);
@@ -406,11 +406,11 @@ body {
     color: #909bad;
 }
 
-.article img {
+.post-wrapper img {
     max-width: 100%;
 }
 
-.article p {
+.post-wrapper p {
     margin-bottom: 10px;
 }
 
