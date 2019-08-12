@@ -415,30 +415,26 @@ body {
 }
 
 /* Sidebar */
-.widget {
+.sidebar .widget {
     background: #FFF;
     border-radius: 3px;
     box-shadow: 0px 4px 20px rgba(101, 101, 101, 0.1);
     font-weight: 500;
     color: #909bad;
 }
-.widget:not(:last-child) {
+.sidebar .widget:not(:last-child) {
     margin-bottom: 20px;
 }
-.widget .widget-header {
+.sidebar .widget h2 {
     padding: 20px;
     border-bottom: solid 1px #EEE;
-}
-.widget .widget-header h2 {
     font-size: 16px;
     font-weight: 500;
     color: #5a6a84;
 }
-.widget .widget-body {
+.widget .widget-content {
     padding: 20px;
 }
-
-
 
 /* Footer */
 .footer {
